@@ -108,13 +108,13 @@ app.delete("/boxtemplate", function (req, res) {
 
 // Define rota da listagem da box template
 app.delete("/listboxtemplate", function (req, res) {
-    var result = deliveryFunctions.findBoxTemplateOfAnId(crudFunctions.boxTemplateObject,req.body["idAuthor"])
+    var result = deliveryFunctions.findBoxTemplateOfAnId(req.body["idAuthor"])
     res.send(result)
 })
 
 // Define rota da listagem da box
 app.delete("/listbox", function (req, res) {
-    var result = deliveryFunctions.findBoxModelOfAnId(req.body["boxObject"],req.body["idOwner"])
+    var result = deliveryFunctions.findBoxModelOfAnId(req.body["idOwner"])
     res.send(result)
 })
 
