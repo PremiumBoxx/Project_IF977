@@ -1,5 +1,6 @@
 //Funções usadas em login/autenticação e registro
 
+
 //Conexão com o BD
 const mongoose = require('mongoose')
 
@@ -47,17 +48,19 @@ const boxSchema = new mongoose.Schema({
 
 // Definição de modelo do usuário
 const userObject = mongoose.model('userObject', userSchema);
+
+function_bundle_1 = {
 // Buscar Todos os usuários
-function findUsers(userObject){
+findusers : function(userObject){
   userObject.find().then((result) =>{
     return result
   }).catch((err) =>{
     return 'Não foi possível encontrar o usuário.' + err
   })
-}
+},
 
 // Buscar usuário pelo nome
-function findUserByName(userObject,nome){
+findUserByName : function(userObject,nome){
   userObject.find({
     name: nome
   }).then((result) =>{
@@ -65,10 +68,10 @@ function findUserByName(userObject,nome){
   }).catch((err) =>{
     return 'Não foi possível encontrar o usuário.' + err
   })
-}
+},
 
 //Buscar User por ID
-function findUserById(userObject,id){
+findUserById : function(userObject,id){
   userObject.findById(id,(err,result) =>{
     if(err){
       return 'Não foi possível encontrar o usuário.' + err
@@ -76,10 +79,10 @@ function findUserById(userObject,id){
       return result
     }
   })
-}
+},
 
 //Delete User byId
-function findUserbyIdAndRemove(userObject,id){
+findUserbyIdAndRemove : function (userObject,id){
   userObject.findByIdAndRemove(id,(err, deletedRecord) => {
     if(err){
       return err
@@ -87,10 +90,10 @@ function findUserbyIdAndRemove(userObject,id){
       return deletedRecord
     }
   })
-}
+},
 
 //Update User byId
-function updateUserById(userObject,updates){
+updateUserById : function(userObject,updates){
   userObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
@@ -99,12 +102,13 @@ function updateUserById(userObject,updates){
     }
   })
 }
- 
+}
 // Definição de modelo da template da box
 const boxTemplateObject = mongoose.model('boxTemplateObject', boxTemplateSchema);
 
+function_bundle_2 = {
 // Criar boxTemplate
-function registerObjectBoxTemplate(boxTemplateData) {
+registerObjectBoxTemplate : function(boxTemplateData) {
   const boxTemplateItem = new boxTemplateObject(boxTemplateData)
   boxTemplateItem.save((err,result) => {
     if(err){
@@ -113,10 +117,10 @@ function registerObjectBoxTemplate(boxTemplateData) {
       return result
     }
   })
-}
+},
 
 //Buscar boxTemplate por ID
-function findBoxTemplateById(boxTemplateObject,id){
+findBoxTemplateById: function(boxTemplateObject,id){
   boxTemplateObject.findById(id,(err,result) =>{
     if(err){
       return 'Não foi possível encontrar o usuário.' + err
@@ -124,10 +128,10 @@ function findBoxTemplateById(boxTemplateObject,id){
       return result
     }
   })
-}
+},
 
 //Delete boxTemplate byId
-function findBoxTemplateByIdAndRemove(boxTemplateObject,id){
+findBoxTemplateByIdAndRemove :function(boxTemplateObject,id){
   boxTemplateObject.findByIdAndRemove(id,(err, deletedRecord) => {
     if(err){
       return err
@@ -135,10 +139,10 @@ function findBoxTemplateByIdAndRemove(boxTemplateObject,id){
       return deletedRecord
     }
   })
-}
+},
 
 //Update boxTemplate byId
-function updateBoxTemplateById(boxTemplateObject,updates){
+updateBoxTemplateById: function(boxTemplateObject,updates){
   boxTemplateObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
@@ -147,12 +151,14 @@ function updateBoxTemplateById(boxTemplateObject,updates){
     }
   })
 }
+}
 
 // Definição de modelo da box
 const boxObject = mongoose.model('boxObject', boxSchema);
 
+function_bundle_3 = {
 // Criar box model
-function registerObjectBoxModel(boxModelData) {
+registerObjectBoxModel : function(boxModelData) {
   const boxModelItem = new boxObject(boxModelData)
   boxModelItem.save((err,result) => {
     if(err){
@@ -161,10 +167,10 @@ function registerObjectBoxModel(boxModelData) {
       return result
     }
   })
-}
+},
 
 //Buscar box model
-function findBoxModelById(boxObject,id){
+findBoxModelById: function(boxObject,id){
   boxObject.findById(id,(err,result) =>{
     if(err){
       return 'Não foi possível encontrar o usuário.' + err
@@ -172,10 +178,10 @@ function findBoxModelById(boxObject,id){
       return result
     }
   })
-}
+},
 
 //Delete box model byId
-function findBoxModelByIdAndRemove(boxObject,id){
+findBoxModelByIdAndRemove: function(boxObject,id){
   boxObject.findByIdAndRemove(id,(err, deletedRecord) => {
     if(err){
       return err
@@ -183,10 +189,10 @@ function findBoxModelByIdAndRemove(boxObject,id){
       return deletedRecord
     }
   })
-}
+},
 
 //Update box model byId
-function updateBoxModelById(boxObject,updates){
+updateBoxModelById: function(boxObject,updates){
   boxObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
@@ -195,3 +201,6 @@ function updateBoxModelById(boxObject,updates){
     }
   })
 }
+}
+
+module.exports = {userObject,boxObject,boxTemplateObject,function_bundle_1,function_bundle_2,function_bundle_3}

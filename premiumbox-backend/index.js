@@ -1,6 +1,6 @@
-import * as authFunctions from './src/auth_functions.js'
-import * as crudFunctions from './src/crud_functions.js'
-import * as deliveryFunctions from './src/delivery_functions.js'
+var authFunctions = require('./src/auth_functions.js')
+var crudFunctions = require('./src/crud_functions.js')
+var deliveryFunctions = require('./src/delivery_functions.js')
 
 const mongoose = require('mongoose')
 
@@ -36,55 +36,55 @@ app.post("/auth", function (req, res) {
 
 // Define rota de cadastro
 app.put("/auth", function (req, res) {
-    var result = authFunctions.registerFunction(req.body)
+    var result = authFunctions.registerFunction(req.body["userDataObject"])
     res.send(result)
 })
 
 // Define rota de update do usuário
 app.patch("/user", function (req, res) {
-    var result = crudFunctions.updateUserById(req.body["userObject"],req.body["updates"])
+    var result = crudFunctions.updateUserById(crudFunctions.userObject, req.body["updates"])
     res.send(result)
 })
 
 // Define rota de get do usuário
 app.post("/user", function (req, res) {
-    var result = crudFunctions.findUserById(req.body["userObject"],req.body["id"])
+    var result = crudFunctions.findUserById(crudFunctions.userObject,req.body["id"])
     res.send(result)
 })
 
 // Define rota de delete do usuário
 app.delete("/user", function (req, res) {
-    var result = crudFunctions.findUserbyIdAndRemove(req.body["userObject"],req.body["id"])
+    var result = crudFunctions.findUserbyIdAndRemove(crudFunctions.userObject,req.body["id"])
     res.send(result)
 })
 
 // Define rota de put da box
 app.put("/box", function (req, res) {
-    var result = crudFunctions.registerObjectBoxModel(req["boxModelData"])
+    var result = crudFunctions.registerObjectBoxModel(req.body["boxModelData"])
     res.send(result)
 })
 
 // Define rota de update da box
 app.patch("/box", function (req, res) {
-    var result = crudFunctions.updateBoxModelById(req.body["boxObject"],req.body["updates"])
+    var result = crudFunctions.updateBoxModelById(crudFunctions.boxObject,req.body["updates"])
     res.send(result)
 })
 
 // Define rota de get da box
 app.post("/box", function (req, res) {
-    var result = crudFunctions.findBoxModelById(req.body["boxObject"],req.body["id"])
+    var result = crudFunctions.findBoxModelById(crudFunctions.boxObject,req.body["id"])
     res.send(result)
 })
 
 // Define rota de delete da box
 app.delete("/box", function (req, res) {
-    var result = crudFunctions.findBoxModelByIdAndRemove(req.body["boxObject"],req.body["id"])
+    var result = crudFunctions.findBoxModelByIdAndRemove(crudFunctions.boxObject,req.body["id"])
     res.send(result)
 })
 
 // Define rota de put da box template
 app.put("/boxtemplate", function (req, res) {
-    var result = crudFunctions.findBoxModelByIdAndRemove(req.body["boxObject"],req.body["id"])
+    var result = crudFunctions.findBoxModelByIdAndRemove(crudFunctions.boxObject,req.body["id"])
     res.send("Hello World!")
 })
 
@@ -96,19 +96,19 @@ app.patch("/boxtemplate", function (req, res) {
 
 // Define rota de get da box template
 app.post("/boxtemplate", function (req, res) {
-    var result = crudFunctions.findBoxTemplateById(req.body["boxTemplateObject"],req.body["id"])
+    var result = crudFunctions.findBoxTemplateById(crudFunctions.boxTemplateObject,req.body["id"])
     res.send(result)
 })
 
 // Define rota de delete da box template
 app.delete("/boxtemplate", function (req, res) {
-    var result = crudFunctions.findBoxTemplateByIdAndRemove(req.body["boxTemplateObject"],req.body["id"])
+    var result = crudFunctions.findBoxTemplateByIdAndRemove(crudFunctions.boxTemplateObject,req.body["id"])
     res.send("Hello World!")
 })
 
 // Define rota da listagem da box template
 app.delete("/listboxtemplate", function (req, res) {
-    var result = deliveryFunctions.findBoxTemplateOfAnId(req.body["boxTemplateObject"],req.body["idAuthor"])
+    var result = deliveryFunctions.findBoxTemplateOfAnId(crudFunctions.boxTemplateObject,req.body["idAuthor"])
     res.send(result)
 })
 

@@ -2,6 +2,7 @@
 
 //Conexão com o BD
 const mongoose = require('mongoose')
+var generalResource = require('./crud_functions.js');
 
 const url = `mongodb+srv://vrs2:p4KAoCs04AdjVewl@cluster0.a6ny4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
@@ -18,21 +19,10 @@ mongoose.connect(url,connectionParams)
         console.error(`Error connecting to the database. \n${err}`);
     })
 
-//Schema do usuário
-const userSchema = new mongoose.Schema({
-    name: String,
-    password: String,
-    email: String,
-    address: String,
-    age: Number,
-    gender: String
-  });
-
-// Definição de modelo do usuário
-const userObject = mongoose.model('userObject', userSchema);
+module.exports = {
 
 //Função de login
-function authFunction(userName,userPassword) {
+authFunction: function(userName,userPassword) {
    var userItem = mongoose.findById(userName, function (err, adventure) {});
    if (userItem['password'] == userPassword) {
         return true
@@ -40,12 +30,13 @@ function authFunction(userName,userPassword) {
    else {
         return false
    }
-}
+},
 
-function registerFunction(userDataObject) {
-    var userItem = new userObject(userDataObject)
+registerFunction: function(userDataObject) {
+    var userItem = new generalResource.userObject(userDataObject)
     userItem.save(function (err) {
         if (err) return "Error 1: Object could not be created";
       });
     return true
+}
 }
