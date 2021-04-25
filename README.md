@@ -232,7 +232,7 @@ Para auxiliar na prototipação elaboramos casos de uso para cada funcionalidade
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://api.whatsapp.com/send?phone=5581994197894"><img src="https://i.imgur.com/Uy99VJk.png" width="100px;" alt="Matheus Brant"/><br /><sub><b>Matheus Brant</b></sub></a><br /><a href="https://github.com/mathrbrantn"title="Code">💻</a></td>
+    <td align="center" width="200px"><a href="https://api.whatsapp.com/send?phone=5581994197894"><img src="https://i.imgur.com/Uy99VJk.png" width="100px;" alt="Matheus Brant"/><br /><sub><b>Matheus Brant</b></sub></a><br /><a href="https://github.com/mathrbrantn"title="Code">💻</a></td>
      <td align="center"><a href="https://api.whatsapp.com/send?phone=55819973885834"><img src="https://i.imgur.com/WgQAu4R.png" width="100px;" alt="Itérbio Arantes"/><br /><sub><b>Itérbio Arantes</b></sub></a><br /><a href="https://github.com/IterbioArantes"title="Code">💻</a></td>
     <td align="center"><a href="https://api.whatsapp.com/send?phone=5581991840455"><img src="https://i.imgur.com/S0mEw97.png" width="100px;" alt="Vinícius Rosa"/><br /><sub><b>Vinícius Rosa</b></sub></a><br /><a href="https://github.com/vrs2"title="Code">💻</a></td>
     <td align="center"><a href="https://api.whatsapp.com/send?phone=558181992901019"><img src="https://i.imgur.com/rxMqFbW.png" width="100px;" alt="Isabela Carneiro"/><br /><sub><b>Isabela Carneiro</b></sub></a><br /><a href="https://github.com/isabelamenezs"title="Design">🎨</a></td>
