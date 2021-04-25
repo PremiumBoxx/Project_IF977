@@ -94,6 +94,7 @@ findUserbyIdAndRemove : function (userObject,id){
 
 //Update User byId
 updateUserById : function(userObject,updates){
+  var id = updates["id"]
   userObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
@@ -143,6 +144,7 @@ findBoxTemplateByIdAndRemove :function(boxTemplateObject,id){
 
 //Update boxTemplate byId
 updateBoxTemplateById: function(boxTemplateObject,updates){
+  var id = updates["id"]
   boxTemplateObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
@@ -193,6 +195,7 @@ findBoxModelByIdAndRemove: function(boxObject,id){
 
 //Update box model byId
 updateBoxModelById: function(boxObject,updates){
+  var id = updates["id"]
   boxObject.findByIdAndUpdate(id,updates,(err,updateRecord) => {
     if(err){
       return err
