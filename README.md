@@ -36,20 +36,6 @@ Além de oferecer um curso online para digitais influencers, Camila deseja vende
 
 **Carlos** tem 52 anos e se aposentou recentemente. Ele trabalhou na fabricação de móveis de alta qualidade durante 28 anos e por isso quer oferecer uma consultoria online aos alunos que comprarem seu curso de marcenaria que contém vídeos com aulas de confecção e informações sobre móveis de diferentes estilos e materiais. Tudo isso com um ebook de fotos das peças que Carlos produziu durante seus anos de trabalho e um ebook para acompanhar as aulas do curso. Carlos precisa de uma plataforma simples e de acesso fácil e intuitivo para gerir todos os produtos e serviços que ele deseja oferecer.
 
-## Equipe
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table>
-  <tr>
-    <td align="center"><a href="https://api.whatsapp.com/send?phone=5581994197894"><img src="https://i.imgur.com/Uy99VJk.png" width="100px;" alt="Matheus Brant"/><br /><sub><b>Matheus Brant</b></sub></a><br /><a href="https://github.com/mathrbrantn"title="Code">💻</a></td>
-     <td align="center"><a href="https://api.whatsapp.com/send?phone=55819973885834"><img src="https://i.imgur.com/WgQAu4R.png" width="100px;" alt="Itérbio Arantes"/><br /><sub><b>Itérbio Arantes</b></sub></a><br /><a href="https://github.com/IterbioArantes"title="Code">💻</a></td>
-    <td align="center"><a href="https://api.whatsapp.com/send?phone=5581991840455"><img src="https://i.imgur.com/S0mEw97.png" width="100px;" alt="Vinícius Rosa"/><br /><sub><b>Vinícius Rosa</b></sub></a><br /><a href="https://github.com/vrs2"title="Code">💻</a></td>
-    <td align="center"><a href="https://api.whatsapp.com/send?phone=558181992901019"><img src="https://i.imgur.com/rxMqFbW.png" width="100px;" alt="Isabela Carneiro"/><br /><sub><b>Isabela Carneiro</b></sub></a><br /><a href="https://github.com/isabelamenezs"title="Design">🎨</a></td>
-  </tr>
-</table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 ## Comunicação
 
 - Remota (Via Whatsapp e Discord).
@@ -232,7 +218,27 @@ Para auxiliar na prototipação elaboramos casos de uso para cada funcionalidade
 - Acionar a barra de pesquisa no centro superior da tela inicial e digitar o nome do usuário ou pacote desejados;
 - Ao visualizar o usuário ou pacote na barra de pesquisa, clicar sobre a opção desejada.
 
-**Fluxos Secundários:**
-N/A
+### DEV Notes
 
+## Tech Stack
 
+- [Node](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/)
+
+## Libs usadas
+- [express](https://expressjs.com/pt-br/)
+- [mongoose](https://mongoosejs.com/)
+
+## Equipe
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://api.whatsapp.com/send?phone=5581994197894"><img src="https://i.imgur.com/Uy99VJk.png" width="100px;" alt="Matheus Brant"/><br /><sub><b>Matheus Brant</b></sub></a><br /><a href="https://github.com/mathrbrantn"title="Code">💻</a></td>
+     <td align="center"><a href="https://api.whatsapp.com/send?phone=55819973885834"><img src="https://i.imgur.com/WgQAu4R.png" width="100px;" alt="Itérbio Arantes"/><br /><sub><b>Itérbio Arantes</b></sub></a><br /><a href="https://github.com/IterbioArantes"title="Code">💻</a></td>
+    <td align="center"><a href="https://api.whatsapp.com/send?phone=5581991840455"><img src="https://i.imgur.com/S0mEw97.png" width="100px;" alt="Vinícius Rosa"/><br /><sub><b>Vinícius Rosa</b></sub></a><br /><a href="https://github.com/vrs2"title="Code">💻</a></td>
+    <td align="center"><a href="https://api.whatsapp.com/send?phone=558181992901019"><img src="https://i.imgur.com/rxMqFbW.png" width="100px;" alt="Isabela Carneiro"/><br /><sub><b>Isabela Carneiro</b></sub></a><br /><a href="https://github.com/isabelamenezs"title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
