@@ -84,7 +84,7 @@ app.delete("/box", function (req, res) {
 
 // Define rota de put da box template
 app.put("/boxtemplate", function (req, res) {
-    var result = crudFunctions.registerObjectBoxTemplate(crudFunctions.boxObject,req.body["id"])
+    var result = crudFunctions.registerObjectBoxTemplate(crudFunctions.boxObject,req.body["boxTemplateData"])
     res.send(result)
 })
 
