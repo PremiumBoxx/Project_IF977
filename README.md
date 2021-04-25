@@ -46,8 +46,6 @@ Além de oferecer um curso online para digitais influencers, Camila deseja vende
 A homologação do projeto foi feita por meio de reuniões entre a equipe para validar a especificação de requisitos e formulários de consulta para definir o público-alvo entre possíveis usuários.
 Para construção do formulário [📄](https://docs.google.com/forms/d/e/1FAIpQLSfipBrult6CVg1pS6MutPBrWdOMs5BQl69xLn9KB5aqwcXk4A/viewform) de especificação do projeto utilizamos perguntas relacionadas à usabilidade, uma vez que será o indicador de qualidade (nível de satisfação do usuário) utilizado no teste de usabilidade do produto final.
 
-## DEV Notes
-
 ## Metodologia
 
 - Metodolgia XGH (eXtreme Go Horse). 🐎🤠
