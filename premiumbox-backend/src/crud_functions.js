@@ -87,7 +87,7 @@ findUserbyIdAndRemove : function (userObject,id){
     if(err){
       return err
     } else {
-      return deletedRecord
+      return true
     }
   })
 },
@@ -98,7 +98,7 @@ updateUserById : function(userObject,updates){
     if(err){
       return err
     } else {
-      return updateRecord
+      return true
     }
   })
 }
@@ -114,7 +114,7 @@ registerObjectBoxTemplate : function(boxTemplateData) {
     if(err){
       return 'Não foi possível cadastrar o template da box' + err
     } else {
-      return result
+      return true
     }
   })
 },
@@ -136,7 +136,7 @@ findBoxTemplateByIdAndRemove :function(boxTemplateObject,id){
     if(err){
       return err
     } else {
-      return deletedRecord
+      return true
     }
   })
 },
@@ -147,7 +147,7 @@ updateBoxTemplateById: function(boxTemplateObject,updates){
     if(err){
       return err
     } else {
-      return updateRecord
+      return true
     }
   })
 }
@@ -164,7 +164,7 @@ registerObjectBoxModel : function(boxModelData) {
     if(err){
       return 'Não foi possível cadastrar o modelo da box' + err
     } else {
-      return result
+      return true
     }
   })
 },
@@ -186,7 +186,7 @@ findBoxModelByIdAndRemove: function(boxObject,id){
     if(err){
       return err
     } else {
-      return deletedRecord
+      return true
     }
   })
 },
@@ -197,7 +197,7 @@ updateBoxModelById: function(boxObject,updates){
     if(err){
       return err
     } else {
-      return updateRecord
+      return true
     }
   })
 }

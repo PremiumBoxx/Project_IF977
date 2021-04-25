@@ -84,13 +84,13 @@ app.delete("/box", function (req, res) {
 
 // Define rota de put da box template
 app.put("/boxtemplate", function (req, res) {
-    var result = crudFunctions.findBoxModelByIdAndRemove(crudFunctions.boxObject,req.body["id"])
-    res.send("Hello World!")
+    var result = crudFunctions.registerObjectBoxTemplate(crudFunctions.boxObject,req.body["id"])
+    res.send(result)
 })
 
 // Define rota de update da box template
 app.patch("/boxtemplate", function (req, res) {
-    var result = crudFunctions.registerObjectBoxTemplate(req.body["boxTemplateData"])
+    var result = crudFunctions.updateBoxTemplateById(req.body["boxTemplateObject"],req.body["updates"])
     res.send(result)
 })
 
@@ -103,7 +103,7 @@ app.post("/boxtemplate", function (req, res) {
 // Define rota de delete da box template
 app.delete("/boxtemplate", function (req, res) {
     var result = crudFunctions.findBoxTemplateByIdAndRemove(crudFunctions.boxTemplateObject,req.body["id"])
-    res.send("Hello World!")
+    res.send(result)
 })
 
 // Define rota da listagem da box template
