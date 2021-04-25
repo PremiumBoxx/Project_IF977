@@ -240,3 +240,6 @@ Para auxiliar na prototipação elaboramos casos de uso para cada funcionalidade
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<br>
+Thanks! 😄
