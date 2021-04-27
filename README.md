@@ -60,6 +60,9 @@ Para construção do formulário [📄](https://docs.google.com/forms/d/e/1FAIpQ
 - [express](https://expressjs.com/pt-br/)
 - [mongoose](https://mongoosejs.com/)
 
+## OpenAPI Specification
+- https://app.swaggerhub.com/apis-docs/PremiumBox/PremiumBox/1.0.0
+
 ## Protótipo
 
 Para auxiliar na prototipação elaboramos casos de uso para cada funcionalidade definida como requisito. Segue abaixo a tela e os casos de uso correspondentes aos seus respectivos processos.
