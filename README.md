@@ -3,7 +3,7 @@ Projeto ES 2020.1
 
 ## Descrição
 
-Esta API suporta o aplicativo chamado PremiumBox.
+Esta aplicação web suporta o PremiumBox.
 A missão do PremiumBox é ofertar pacotes de conteúdos específicos de diversas áreas do conhecimento. 
 
 ## Oportunidade
