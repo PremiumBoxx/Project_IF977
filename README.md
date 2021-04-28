@@ -62,6 +62,7 @@ Para construção do formulário [📄](https://docs.google.com/forms/d/e/1FAIpQ
 
 ## OpenAPI Specification
 - https://app.swaggerhub.com/apis-docs/PremiumBox/PremiumBox/1.0.0
+- Testes exploratórios: Requisições via postman
 
 ## Protótipo
 
